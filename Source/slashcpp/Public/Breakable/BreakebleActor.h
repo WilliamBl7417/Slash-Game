@@ -32,11 +32,10 @@ private:
 	UPROPERTY(VisibleAnywhere)
 	UGeometryCollectionComponent* GeometryCollection;
 
-	// Añade esto en la sección private o protected:
 	UPROPERTY(EditAnywhere, Category = "Breakable Properties")
-	TArray<TSubclassOf<class ATreasure>> ItemToSpawn;  // Clase del objeto a spawnear (asignable desde el Editor o Blueprint)
+	TArray<TSubclassOf<class ATreasure>> ItemToSpawn;
 
 	UPROPERTY(EditAnywhere, Category = "Breakable Properties")
-	float SpawnOffsetZ = 50.f;  // Offset vertical para el spawn
+	float SpawnOffsetZ = 50.f;
 
 };
